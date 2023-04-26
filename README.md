@@ -6,8 +6,8 @@ This code corresponds to the research paper Jung et al., "Self-Attention-based U
 This code is based on George Zerveas et al. A Transformer-based Framework for Multivariate Time Series Representation Learning, in Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '21) (https://github.com/gzerveas/mvts_transformer)
 
 # Dataset
-Commercial South Korea 5G Non-Standalone (NSA) uplink resource dataset is available at IEEE Dataport.
-We utilized it for training, validation and testing for our model.
+Commercial South Korea 5G Non-Standalone (NSA) uplink resource dataset is available at dataset folder.
+We utilized it for testing our model.
 
 # Execution Manual
 You can train your own model from scratch or use our pretrained model if you want.
@@ -26,3 +26,6 @@ You can set your own hyperparameters.
 # Model Optimization (Quantization)
 We compressed our model for deploying it on commercial smartphone with reasonable resource (CPU,RAM,etc..) utilization.
 We uploaded example source code (model_optimization.py) that we used, so you may modify it if you want.
+
+# Contact
+doubele112@naver.com
