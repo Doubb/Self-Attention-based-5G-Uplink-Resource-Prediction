@@ -4,8 +4,7 @@ We collected a large amount of data and extensively measured 5G Dual Connectivit
 In these measurements, we used a rooted phone (Samsung Galaxy S20) and XCAL-Solo, which is a COTS monitoring tool, to acquire a cellular signal and uplink scheduling information directly from a 5G modem chipset.
 We executed iPerf to generate massive UDP traffic to fully utilize the available uplink bandwidth allocated by BSs (eNodeB or gNodeB)
 
-We collected measurement data in various locations, i.e., five highways, four downtown areas, and three stationary locations (residences, offices, and department stores).
-Here, equal amounts of data were collected from each of the three carriers.
+We collected measurement data in various locations, i.e., highway, downtown, and stationary locations (residences and offices).
 
 # Dataset Features and Configuration
 
