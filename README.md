@@ -1,12 +1,12 @@
 # Self-Attention-based 5G Uplink Resource Prediction
 Transformer's Encoder-based 5G Transport Block Size (TBS) Prediction Model
 
-This code corresponds to the research paper Jung et al., "Self-Attention-based Uplink Radio Resource Prediction in 5G Dual Connectivity".
+This code corresponds to the research paper Jung et al., "Self-Attention-based Uplink Radio Resource Prediction in 5G Dual Connectivity", in IEEE Internet of Things Journal 2023 (https://ieeexplore.ieee.org/document/10147378) (DOI: 10.1109/JIOT.2023.3283490)
 
-This code is based on George Zerveas et al. A Transformer-based Framework for Multivariate Time Series Representation Learning, in Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '21) (https://github.com/gzerveas/mvts_transformer)
+This code is based on George Zerveas et al., "A Transformer-based Framework for Multivariate Time Series Representation Learning", in Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '21) (https://dl.acm.org/doi/10.1145/3447548.3467401) (https://github.com/gzerveas/mvts_transformer)
 
 # Dataset
-Commercial South Korea 5G Non-Standalone (NSA) uplink resource dataset is available at dataset folder.
+Some instances of commercial South Korea 5G Non-Standalone (NSA) uplink resource dataset is available at dataset folder.
 We utilized it for testing our model.
 
 # Execution Manual
