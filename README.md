@@ -5,13 +5,22 @@ This code corresponds to the research paper Jung et al., "Self-Attention-based U
 
 This code is based on George Zerveas et al., "A Transformer-based Framework for Multivariate Time Series Representation Learning", in Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '21) (https://dl.acm.org/doi/10.1145/3447548.3467401) (https://github.com/gzerveas/mvts_transformer)
 
+# Contact
+doubele112@naver.com
+
 # Dataset
-Some instances of commercial South Korea 5G Non-Standalone (NSA) uplink resource dataset is available at dataset folder.
+Some commercial South Korea 5G Non-Standalone (NSA) uplink resource datasets are available in the dataset folder.
 We utilized it for testing our model.
 
 # Execution Manual
-You can train your own model from scratch or use our pretrained model if you want.
-We also uploaded our best model weights (model_best.pth), normalization pickle file and source code for loading and testing.
+You can train your own model from scratch or use our pre-trained model if you want.
+We also uploaded our best model weights (model_best.pth), normalization pickle file, and source code for data converting, loading, and testing.
+
+Data converting)
+
+In original source code from KDD '21, the authors used ".ts" file for their training and testing input so we need to convert our ".csv" file into ".ts" file.
+We uploaded our example converter code which makes a 1,000 ms input sequence using 8 features to predict average 100ms aggregated TBS.
+You can customize your own converter code based on it.
 
 Train from scratch example)
 
@@ -24,8 +33,5 @@ python3 src/loadtest.py --output_dir {your_output_directory} --comment {your_com
 You can set your own hyperparameters.
 
 # Model Optimization (Quantization)
-We compressed our model for deploying it on commercial smartphone with reasonable resource (CPU,RAM,etc..) utilization.
-We uploaded example source code (model_optimization.py) that we used, so you may modify it if you want.
-
-# Contact
-doubele112@naver.com
+We compressed our model for deploying it on commercial smartphones with reasonable resource (CPU, RAM, etc..) utilization.
+We uploaded an example source code (model_optimization.py) that we used, so you may modify it.
